@@ -77,10 +77,6 @@ body {
     color: black;
 }
 
-.rps-button:focus {
-    outline: none;
-}
-
 
 h1 {
     margin: 0;
