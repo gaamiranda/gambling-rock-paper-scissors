@@ -24,9 +24,18 @@
 	</div>
 	<div class="buttons-container">
 		<button class="rps-button" id="rock-button">🪨</button>
-		<button class="rps-button" id="scissors-button">✂️</button>
 		<button class="rps-button" id="paper-button">🧻</button>
+		<button class="rps-button" id="scissors-button">✂️</button>
 	</div>
+	<!-- Popup -->
+	<div id="bet-popup" class="popup-overlay">
+        <div class="popup-content">
+            <h3>How much do you want to bet?</h3>
+            <p>You currently have: <span id="current-amount">100</span></p>
+            <input type="number" id="bet-amount" placeholder="Enter your bet amount">
+            <button id="submit-bet">Submit</button>
+        </div>
+    </div>
 	<script src="script.js"></script>
 </body>
 </html>
