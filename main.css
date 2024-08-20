@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222831;
+}
+
+.Title {
+    background-color: black;
+    color: green;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: 0.3rem;
+}
+
+.general {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 100px auto;
+}
+
+.choice-item {
+    text-align: center;
+    flex: 1;
+}
+
+#your-choice, #computer-choice {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.dollar-sign {
+    font-size: 5rem;
+    color: yellow;
+}
+
+#your-score, #computer-score {
+	margin-top: 30px;
+	color: white;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.rps-button {
+    font-size: 2.5rem;
+    padding: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    background-color: #393E46;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.rps-button:hover {
+    background-color: #00ADB5;
+}
+
+.rps-button:active {
+    background-color: #EEEEEE;
+    color: black;
+}
+
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: #222831;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+}
+
+.popup-content h3 {
+    margin: 0 0 20px;
+}
+
+.popup-content input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00ADB5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-content button:hover {
+    background-color: #00CED1;
+}
+
+/* Hide popup initially */
+#bet-popup {
+    display: none;
+}

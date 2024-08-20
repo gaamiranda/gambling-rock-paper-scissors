@@ -4,38 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<title>Rock Paper Scissors</title>
+	<title>Document</title>
 </head>
 <body>
-	<h1 class="Title"> ROCK PAPER SCISSORS</h1>
-	<h2 class="general">First to 3 wins</h2>
-	<div class="choices-container">
-		<div class="choice-item">
-			<h2 id="your-choice">Your choice:</h2>
-			<div class="dollar-sign"><span id="your_emoji">🤑</span></div>
-			<h2 id="your-score">Your score: <span id="your_score">0</span></h2>
+	<div class="login-page">
+		<div class="form">
+			<form class="register-form">
+			<input type="text" placeholder="name"/>
+			<input type="password" placeholder="password"/>
+			<input type="text" placeholder="email address"/>
+			<button>create</button>
+			<p class="message">Already registered? <a href="#">Sign In</a></p>
+			</form>
+			<form class="login-form">
+			<input type="text" placeholder="username"/>
+			<input type="password" placeholder="password"/>
+			<button>login</button>
+			<p class="message">Not registered? <a href="#">Create an account</a></p>
+			</form>
 		</div>
-		<div class="choice-item">
-			<h2 id="computer-choice">Computer choice:</h2>
-			<div class="dollar-sign"><span id="computer_emoji">🤑</span></div>
-			<h2 id="computer-score">Computer score: <span id="computer_score">0</span></h2>
 		</div>
-	</div>
-	<div class="buttons-container">
-		<button class="rps-button" id="rock-button">🪨</button>
-		<button class="rps-button" id="paper-button">🧻</button>
-		<button class="rps-button" id="scissors-button">✂️</button>
-	</div>
-	<!-- Popup -->
-	<div id="bet-popup" class="popup-overlay">
-        <div class="popup-content">
-            <h3>How much do you want to bet?</h3>
-            <p>You currently have: <span id="current-amount">100</span></p>
-            <input type="number" id="bet-amount" placeholder="Enter your bet amount">
-            <button id="submit-bet">Submit</button>
-        </div>
-    </div>
-	<script src="script.js"></script>
+		<script src="script.js"></script>
 </body>
 </html>
