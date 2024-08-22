@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-	<div class="login-page">
-		<div class="form">
-			<form class="login-form">
-			<input type="text" id="login-name" placeholder="username"/>
-			<input type="password" id="login-password" placeholder="password"/>
-			<button id="login-button">login</button>
-			</form>
-		</div>
-		</div>
-		<script src="script.js"></script>
+    <h2>Login</h2>
+    <div class="login-form">
+        <form id="login-form">
+            <div class="input-group">
+                <label for="login-username">
+                    <input required type="text" placeholder="Username" id="login-username">
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="login-password">
+                    <input required type="password" placeholder="Password" id="login-password">
+                </label>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="SIGN IN" id="login-button">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
